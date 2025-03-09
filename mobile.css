@@ -16,6 +16,12 @@
     display: flex;
     flex-direction: column;
 }
+.footer,.mission,.text-cards{
+    position: unset;
+}
+.gallery{
+    display: none;
+}
 .mission{
     width:100%;
     display: flex;
