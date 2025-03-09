@@ -9,6 +9,8 @@
     -o-aspect-ratio: 1/1;
     aspect-ratio: 1/1;
     aspect-ratio: 1/1;
+    background:black;
+    background-image: black;
     object-fit: cover;
 }
 .input{transform: scale(.5);}
