@@ -160,7 +160,7 @@ background-image: url(./assets/girls.jpg);
 -webkit-background-image: url(./assets/girls.jpg);
 border-radius: 20px;
 background-size: 1000px 600px;
--webkit-background-size: 1200px 800px;
+-webkit-background-size: 1400px 1000px;
 background-position: center;
 display: flex;
 flex-direction: column;
@@ -170,7 +170,7 @@ background-repeat: repeat;
 -webkit-background-repeat: repeat;
 background-attachment: fixed;
 -webkit-background-attachment: fixed;
--webkit-background-position:center top;
+-webkit-background-position:400px 0px;
 border:10px solid rgba(255, 255, 255, 0);
 
 }
