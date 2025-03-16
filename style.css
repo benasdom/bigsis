@@ -318,6 +318,7 @@ margin-left: 100%;
     margin:10px;
     right:0;
     margin:5px;
+    z-index: 10;
     width:50px;
     display: none;
     height:50px;
@@ -362,13 +363,13 @@ margin-left: 100%;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    z-index: -100000px;
+    z-index: -100000;
 
     animation:vanish 4s ease-in forwards;
 }
 @keyframes vanish {
     0%,70%{opacity: 1;
-        z-index: 100000px;
+        z-index: 100000;
 
     }
     98%{
@@ -377,7 +378,7 @@ margin-left: 100%;
     }
     100%{
         opacity: 0;
-        z-index: -100000px;
+        z-index: -100000;
         display: none;
     }
 }

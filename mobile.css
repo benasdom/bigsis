@@ -117,11 +117,13 @@
 }
 .svgmenu{
 display:block;
+z-index: 1000;
     transition: all 1s ease-in-out;
 
 }
 .phonemenu{
     display:block;
+    z-index: 0;
     animation:slideout 1s ease-in-out forwards;
 
 }
@@ -134,6 +136,8 @@ display:block;
 
 }
 .slidein{
+    z-index: 1000;
+
     transition: all 1s ease-in-out;
     animation:slidein 1s ease-in-out forwards;
 }
