@@ -147,18 +147,13 @@ overflow: hidden;
 }
 
 .pglogo{
-    width: 400px;
-    margin-top: 100px;
+    width: 300px;
+    margin-top:20px;
     border-radius: 50%;
+    filter:
+    drop-shadow(0px 0px 1px black);
     object-fit: cover;
     user-select: none;
-    box-shadow:
-    inset 0px 0px 0px #255E3B,
-    inset 0px 0px 0px #4BBC77,
-    inset 0px 0px 0px #FF66C4,
-    inset 0px 0px 0px #ffaee0,
-    inset 60px 0px 0px #FFD0ED ;
-    animation: grows 10s ease-in-out infinite;
 }
     .welcome h1{
     position: relative;
@@ -178,12 +173,47 @@ overflow: hidden;
 .menubar{
     display: flex;
     position: absolute;
-    width:100%;
     justify-content: flex-end;
     align-items: center;
-    height:70px;
+    height:50px;
+    width:80%;
     border-radius: 30px;
+    animation:returns ease-in forwards;
+    animation-timeline: view();
+    animation-range-start: 120vh;
+    animation-range-end: 300vh;
   
+}
+@keyframes returns {
+    0%{
+        opacity:0;
+    }
+ 
+    15%{
+            position:sticky;
+    border-radius: 0px;
+    opacity:1;
+
+            width:100%;
+            backdrop-filter: blur(4rem);
+            background:rgba(255, 255, 255, 0.662);
+            -webkit-backdrop-filter: blur(4rem);
+            z-index: 10;
+            top:0;
+
+    }
+    100%{
+        position:sticky;
+        border-radius: 0px;
+        opacity:1;
+    
+                width:100%;
+                backdrop-filter: blur(4rem);
+                -webkit-backdrop-filter: blur(4rem);
+                z-index: 10;
+                top:0;
+        background:rgb(255, 255, 255);
+    }
 }
 .welcome p{
     letter-spacing: 2px;
@@ -224,12 +254,12 @@ overflow: hidden;
 }
 
 .cardbox{
-height:250px;
-margin:5px;
+height:190px;
+margin:10px;
 background:rgb(0, 0, 0);
 background-image: url(./assets/girls.jpg);
 -webkit-background-image: url(./assets/girls.jpg);
-border-radius: 20px;
+border-radius: 40px;
 background-size: 1000px 600px;
 -webkit-background-size: 1000px 600px;
 background-position: center;
@@ -249,14 +279,24 @@ border:15px solid rgba(255, 255, 255, 0);
 .cardbox:nth-child(1),
     .cardbox:nth-child(4){
     width: 30%;
-    animation:lengthen linear forwards;
+    animation:lengthen ease-in forwards;
     animation-timeline: view();
-    animation-range-start:70vh;
+    animation-range-start:-10vh;
     animation-range-end: 140vh;
 }
 @keyframes lengthen {
+    0%,60%{
+        opacity:0;
+        width:0%;
 
+    }
+70%{
+    opacity:0;
+    width:55%;
+
+}
     100%{
+        opacity: 1;
         width:65%;
 
     }
@@ -265,8 +305,8 @@ border:15px solid rgba(255, 255, 255, 0);
 .cardbox:nth-child(2),
     .cardbox:nth-child(3){
     width:30%;
-    outline-offset:-7px;
-    outline:3px double gold;
+    outline-offset:-12px;
+    outline:4px double rgb(255, 158, 218)
 }
 .path{
     stroke-linecap: round;
@@ -279,6 +319,7 @@ border:15px solid rgba(255, 255, 255, 0);
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding-top:100px;
     background:whitesmoke;
     margin:auto;
     width:70%;
@@ -466,7 +507,8 @@ color:rgba(255, 255, 255, 0.2);
 background-image:
 repeating-linear-gradient(45deg,white,white);
 background-clip: text;
-font-size:30px;
+letter-spacing: 2px;
+font-size:25px;
 background-size: 0% 100%;
 animation: scrolls linear forwards;
 animation-timeline: view();
@@ -537,10 +579,10 @@ to{
     background:rgba(255, 255, 255, 0.23);
 }
 .note{
-    background:repeating-linear-gradient(45deg,#255E3B,black 300px);
-    color:white;
+    color:var(--text-color);
     width:400px;
     display: flex;
+    background: lightgray;
     background-attachment: fixed;
     height:fit-content;
     border-radius: 0px 30px 30px 0px;
@@ -570,25 +612,29 @@ to{
     background:linear-gradient(45deg,rgb(0, 255, 187),rgb(0, 208, 255),yellow,rgb(230, 39, 255),white);
     backdrop-filter: blur(4rem);
     background-clip: text;
+    margin:10px;
     background-size: 0% 100%;
 animation: scrolls linear forwards;
 animation-timeline: view();
 background-repeat: no-repeat;
 
-    border-radius: 15px;
-    animation-range-start:40vh;
-    animation-range-end: 140vh;
+    border-radius: 10px;
+    animation-range-start:110vh;
+    animation-range-end: 155vh;
     font-size: 10px;
+    max-width: 90%;
     overflow: hidden;
     color:transparent !important;
 }
 .say2{
     color:white !important;
-    font-size:15px
+    font-size:10px;
+    margin:auto;
 }
 #logo{
-    width:220px;
+    width:140px;
     margin:10px;
+    margin-top:50px;
     filter:
     drop-shadow(0px 0px 1px white)
     drop-shadow(0px 0px 1px white)

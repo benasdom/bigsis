@@ -6,20 +6,22 @@
 .cardbox:nth-child(1),
 .cardbox:nth-child(2),
 .cardbox:nth-child(3),
-    .cardbox:nth-child(4){
-    border-radius: 30px;
-    outline:3px double gold;
-    width:90%;
-    -webkit-aspect-ratio: 1/1;
-    -o-aspect-ratio: 1/1;
-    aspect-ratio: 1/1;
-    aspect-ratio: 1/1;
-    background:black;
-    background-image: black;
-    object-fit: cover;
-    animation: none;
+.cardbox:nth-child(4){
+border-radius: 30px;
+width:90%;
+-webkit-aspect-ratio: 1/1;
+-o-aspect-ratio: 1/1;
+aspect-ratio: 1/1;
+aspect-ratio: 1/1;
+outline:none;
+color:rgb(255, 164, 255) !important;
+object-fit: cover;
+animation: none;
 
-};
+}
+.say2,.say{
+    color:rgb(255, 129, 255) !important;
+}
 .input{transform: scale(.5);}
 .footer{
     display: flex;
@@ -28,10 +30,11 @@
 .footer,.mission,.text-cards{
     position: unset;
 }
+
 .gallery{
     display: none;
 }
-.options:hover,.send:hover,.options:active,.send:active{
+.options:hover,.send:hover{
     box-shadow: inset 700px 0px 0px black;
     cursor: pointer;
     color:whitesmoke;
@@ -101,7 +104,8 @@
 }
 
 .pglogo{
-    width:200px;
+    width:210px;
+    border-radius: 50% 50% 50% 40%;
     height: 150px;
     object-fit: cover;
 }
@@ -114,6 +118,9 @@
     inset 0px 0px 0px #ffaee0,
     inset 30px 0px 0px #FFD0ED ;
 
+}
+.readp span{
+    font-size: 15px;
 }
 .svgmenu{
 display:block;
