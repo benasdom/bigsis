@@ -2,8 +2,13 @@
 .menubar{
     visibility: hidden;
 }
-.cardbox:nth-child(even),.cardbox:nth-child(odd),
-    .cardbox{
+
+.cardbox:nth-child(1),
+.cardbox:nth-child(2),
+.cardbox:nth-child(3),
+    .cardbox:nth-child(4){
+    border-radius: 30px;
+    outline:3px double gold;
     width:90%;
     -webkit-aspect-ratio: 1/1;
     -o-aspect-ratio: 1/1;
@@ -12,7 +17,9 @@
     background:black;
     background-image: black;
     object-fit: cover;
-}
+    animation: none;
+
+};
 .input{transform: scale(.5);}
 .footer{
     display: flex;

@@ -383,7 +383,6 @@ margin-left: 100%;
 }
 img{
     user-select: none;
-    pointer-events: none;
 }
 .load{
     width:300px;
