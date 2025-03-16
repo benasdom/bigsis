@@ -24,6 +24,11 @@
 .gallery{
     display: none;
 }
+.options:hover,.send:hover,.options:active,.send:active{
+    box-shadow: inset 700px 0px 0px black;
+    cursor: pointer;
+    color:whitesmoke;
+}
 .mission{
     width:100%;
     display: flex;
@@ -39,18 +44,112 @@
     margin-top:500px;
   
 }
+
+@keyframes grows {
+    20%{
+        box-shadow:
+        inset 0px 0px 0px #255E3B,
+        inset 0px 0px 0px #4BBC77,
+        inset 0px 0px 0px #FF66C4,
+        inset 0px 0px 0px #ffaee0,
+        inset 0px 0px 0px #FFD0ED ;
+    }
+    
+    40%{
+        box-shadow:
+        inset 0px 0px 0px #255E3B,
+        inset 0px 0px 0px #4BBC77,
+        inset 0px 0px 0px #FF66C4,
+        inset 0px 0px 0px #ffaee0,
+        inset 30px 0px 0px #FFD0ED ;
+    }
+    
+    60%{
+        box-shadow:
+        inset 0px 0px 0px #255E3B,
+        inset 0px 0px 0px #4BBC77,
+        inset 0px 0px 0px #FF66C4,
+        inset 25px 0px 0px #ffaee0,
+        inset 30px 0px 0px #FFD0ED ;
+    }
+    
+    80%{
+        box-shadow:
+        inset 0px 0px 0px #255E3B,
+        inset 0px 0px 0px #4BBC77,
+        inset 20px 0px 0px #FF66C4,
+        inset 25px 0px 0px #ffaee0,
+        inset 30px 0px 0px #FFD0ED ;
+    }
+    
+    100%{
+        box-shadow:
+        inset 10px 0px 0px #255E3B,
+        inset 30px 0px 0px #4BBC77,
+        inset 20px 0px 0px #FF66C4,
+        inset 25px 0px 0px #ffaee0,
+        inset 30px 0px 0px #FFD0ED ;
+    }
+    
+}
+
 .pglogo{
-    width:150px;
+    width:200px;
     height: 150px;
     object-fit: cover;
+}
+.welcome{
+    border-radius: 0px 0px 20px 20px ;
+    box-shadow:
+    inset 0px 0px 0px #255E3B,
+    inset 0px 0px 0px #4BBC77,
+    inset 0px 0px 0px #FF66C4,
+    inset 0px 0px 0px #ffaee0,
+    inset 30px 0px 0px #FFD0ED ;
+
+}
+.svgmenu{
+display:block;
+    transition: all 1s ease-in-out;
+
+}
+.phonemenu{
+    display:block;
+    animation:slideout 1s ease-in-out forwards;
+
 }
 #logo{
     margin:3px;
     left:0;
-    width:60px;
+    width:100px;
     height:60px;
     object-fit: cover;
 
+}
+.slidein{
+    transition: all 1s ease-in-out;
+    animation:slidein 1s ease-in-out forwards;
+}
+@keyframes slidein {
+    0%{
+        margin-left:100%;
+    }
+    100%{
+        margin-left:0%;
+    }
+}
+
+.slideout{
+    transition: all 1s ease-in-out;
+    animation:slideout 1s ease-in-out forwards;
+}
+@keyframes slideout {
+    0%{
+        margin-left:0%;
+    }
+    100%{
+        margin-left:100%;
+    }
 }
 
 }
