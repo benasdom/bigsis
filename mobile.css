@@ -1,6 +1,7 @@
 @media (max-width:800px) {
 .menubar{
     visibility: hidden;
+    display: none;
 }
 
 .cardbox:nth-child(1),

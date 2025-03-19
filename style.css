@@ -176,7 +176,7 @@ overflow: hidden;
     justify-content: flex-end;
     align-items: center;
     height:50px;
-    width:80%;
+    width:75%;
     border-radius: 30px;
     animation:returns ease-in forwards;
     animation-timeline: view();
@@ -190,28 +190,26 @@ overflow: hidden;
     }
  
     15%{
-            position:sticky;
+    position:sticky;
     border-radius: 0px;
     opacity:1;
-
-            width:100%;
-            backdrop-filter: blur(4rem);
-            background:rgba(255, 255, 255, 0.662);
-            -webkit-backdrop-filter: blur(4rem);
-            z-index: 10;
-            top:0;
+    width:100%;
+    backdrop-filter: blur(4rem);
+    background:rgba(255, 255, 255, 0.662);
+    -webkit-backdrop-filter: blur(4rem);
+    z-index: 10;
+    top:0;
 
     }
     100%{
         position:sticky;
         border-radius: 0px;
         opacity:1;
-    
-                width:100%;
-                backdrop-filter: blur(4rem);
-                -webkit-backdrop-filter: blur(4rem);
-                z-index: 10;
-                top:0;
+        width:100%;
+        backdrop-filter: blur(4rem);
+        -webkit-backdrop-filter: blur(4rem);
+        z-index: 10;
+        top:0;
         background:rgb(255, 255, 255);
     }
 }
@@ -324,6 +322,20 @@ border:15px solid rgba(255, 255, 255, 0);
     margin:auto;
     width:70%;
     flex-direction: row;
+    animation: unstick linear forwards;
+    animation-timeline: view();
+    animation-range-start: 240vh;
+    animation-range-end: 270vh;
+}
+@keyframes unstick {
+    50%{
+        filter: opacity(0);
+
+    }
+    100%{
+        position:unset;
+        filter: opacity(0);
+    }
 }
 .input{
     display:flex;
@@ -400,7 +412,7 @@ margin-left: 100%;
     align-items: center;
     background-image: 
     linear-gradient(45deg,
-    #FAFAF8,#FFD0ED,#FF66C4,#4BBC77,#255E3B);
+    #FAFAF8,#FFD0ED);
     backdrop-filter: blur(4rem);
     justify-content: center;
     align-items: center;
