@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Michroma&family=Playwrite+IT+Moderna:wght@100..400&family=Righteous&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Fascinate+Inline&family=Michroma&family=Playwrite+IT+Moderna:wght@100..400&family=Righteous&display=swap');
 
 *{
     box-sizing: border-box;
@@ -44,13 +43,15 @@ body{
     color:whitesmoke;
 }
     .options{
-    color:rgb(109, 0, 91);
+    color:#eaa3ff;
     transition: all .6s ease-in-out;
-    padding:7px;
+    padding:6px;
+    backdrop-filter: blur(4rem);
+    -webkit-backdrop-filter: blur(4rem);
     font-size: 10px;
     font-weight: 300;
     border-radius: 8px;
-    background:rgba(255, 255, 255, 0.2);
+    background:rgba(245, 245, 245, 0.1);
     width:150px;
     margin:5px;
 }
@@ -78,21 +79,22 @@ overflow: hidden;
     align-items: center;
     flex-direction: column;
     background:
-    url(./assets/dp.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.674),rgba(0, 0, 0, 0.348),rgba(0, 0, 0, 0.348),black),
+    url(./assets/group.png),
     url(./assets/back.png),
     radial-gradient(#FAFAF8, #ffaee0,#4BBC77),
     radial-gradient(rgba(0, 0, 0, 0),rgba(116, 112, 0, 0.45));
-    background-size:25em 15em;
     background-position-x: 85%,50%;
+    background-position-y: 90%,90%;
     background-attachment: fixed,fixed;
     background-repeat: no-repeat;
-    background-size:600px 600px, cover,1500px 1000px, 1000px 1000px;
+    background-size:cover,1500px, cover,1500px 1000px, 1000px 1000px;
     background-repeat: no-repeat;
     border-radius: 0px 0px 0% 50% ;
     box-shadow:
-    inset 0px 0px 0px #255E3B,
-    inset 0px 0px 0px #4BBC77,
-    inset 0px 0px 0px #FF66C4,
+    inset 0px 0px 0px #FFD0ED,
+    inset 0px 0px 0px #FFD0ED,
+    inset 0px 0px 0px #db66ff,
     inset 0px 0px 0px #ffaee0,
     inset 60px 0px 0px #FFD0ED ;
     animation:grows 5s linear infinite;
@@ -101,45 +103,45 @@ overflow: hidden;
 @keyframes grows {
     20%{
         box-shadow:
-        inset 0px 0px 0px #255E3B,
-        inset 0px 0px 0px #4BBC77,
-        inset 0px 0px 0px #FF66C4,
+        inset 0px 0px 0px #FFD0ED,
+        inset 0px 0px 0px #FFD0ED,
+        inset 0px 0px 0px #db66ff,
         inset 0px 0px 0px #ffaee0,
         inset 0px 0px 0px #FFD0ED ;
     }
     
     40%{
         box-shadow:
-        inset 0px 0px 0px #255E3B,
-        inset 0px 0px 0px #4BBC77,
-        inset 0px 0px 0px #FF66C4,
+        inset 0px 0px 0px #FFD0ED,
+        inset 0px 0px 0px #FFD0ED,
+        inset 0px 0px 0px #db66ff,
         inset 0px 0px 0px #ffaee0,
         inset 60px 0px 0px #FFD0ED ;
     }
     
     60%{
         box-shadow:
-        inset 0px 0px 0px #255E3B,
-        inset 0px 0px 0px #4BBC77,
-        inset 0px 0px 0px #FF66C4,
+        inset 0px 0px 0px #FFD0ED,
+        inset 0px 0px 0px #FFD0ED,
+        inset 0px 0px 0px #db66ff,
         inset 50px 0px 0px #ffaee0,
         inset 60px 0px 0px #FFD0ED ;
     }
     
     80%{
         box-shadow:
-        inset 0px 0px 0px #255E3B,
-        inset 0px 0px 0px #4BBC77,
-        inset 40px 0px 0px #FF66C4,
+        inset 0px 0px 0px #FFD0ED,
+        inset 0px 0px 0px #FFD0ED,
+        inset 40px 0px 0px #db66ff,
         inset 50px 0px 0px #ffaee0,
         inset 60px 0px 0px #FFD0ED ;
     }
     
     100%{
         box-shadow:
-        inset 10px 0px 0px #255E3B,
-        inset 30px 0px 0px #4BBC77,
-        inset 40px 0px 0px #FF66C4,
+        inset 10px 0px 0px #FFD0ED,
+        inset 30px 0px 0px #FFD0ED,
+        inset 40px 0px 0px #db66ff,
         inset 50px 0px 0px #ffaee0,
         inset 60px 0px 0px #FFD0ED ;
     }
@@ -147,14 +149,13 @@ overflow: hidden;
 }
 
 .pglogo{
-    width: 300px;
+    width: 350px;
     margin-top:20px;
     border-radius: 50%;
-    filter:
-    drop-shadow(0px 0px 1px black);
     object-fit: cover;
     user-select: none;
 }
+
     .welcome h1{
     position: relative;
     display: flex;
@@ -170,14 +171,22 @@ overflow: hidden;
     font-weight: 500;
     font-style: normal;
 }
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 10px;
+}
 .menubar{
     display: flex;
     position: absolute;
     justify-content: flex-end;
     align-items: center;
-    height:50px;
+    height:45px;
     width:75%;
-    border-radius: 30px;
+    border-radius: 0px 10px 10px 0px;
+    backdrop-filter: blur(4rem);
     animation:returns ease-in forwards;
     animation-timeline: view();
     animation-range-start: 120vh;
@@ -195,7 +204,7 @@ overflow: hidden;
     opacity:1;
     width:100%;
     backdrop-filter: blur(4rem);
-    background:rgba(255, 255, 255, 0.662);
+    background:rgba(255, 255, 255, 0.87);
     -webkit-backdrop-filter: blur(4rem);
     z-index: 10;
     top:0;
@@ -231,8 +240,8 @@ overflow: hidden;
     justify-content:space-around;
     align-items: center;
     background:
-    radial-gradient(#0000,#000 55%) no-repeat,
-    repeating-linear-gradient(45deg,#ffbcf3,black 300px);
+    radial-gradient(#0000,#57004b 55%) no-repeat,
+    repeating-linear-gradient(45deg,#360044,rgb(255, 255, 255) 300px);
     background-size:2000px 2000px, 200% 100%;
     height:100vh;
 }
@@ -304,7 +313,7 @@ border:15px solid rgba(255, 255, 255, 0);
     .cardbox:nth-child(3){
     width:30%;
     outline-offset:-12px;
-    outline:4px double rgb(255, 158, 218)
+    outline:4px double rgb(249, 168, 255);
 }
 .path{
     stroke-linecap: round;
@@ -468,6 +477,7 @@ img{
     border:10px solid white;
     transition: all .5s ease-in-out;
     align-items: center;
+    mix-blend-mode: multiply;
     background-image:
     repeating-conic-gradient(
         from 45deg,
@@ -562,8 +572,8 @@ background-repeat: no-repeat;
     overflow:clip;
     flex-direction: row;
     background:
-    radial-gradient(#0000,#000 55%) no-repeat,
-    repeating-linear-gradient(45deg,#ffa5fa,black 700px);
+    radial-gradient(#0000,#00000077 55%) no-repeat,
+    repeating-linear-gradient(45deg,#360044,rgb(204, 0, 163) 700px);
     flex-wrap: wrap;
     background-attachment: fixed;
     justify-content: space-around;
@@ -591,7 +601,7 @@ to{
     background:rgba(255, 255, 255, 0.23);
 }
 .note{
-    color:var(--text-color);
+    color:rgb(0, 109, 0);
     width:400px;
     display: flex;
     background: lightgray;
@@ -607,6 +617,8 @@ to{
     align-items: center;
     justify-content: flex-end;
     padding-right: 50px;
+    outline-offset: -10px;
+    outline: 6px double white;
     transform: rotate(-90deg);
 }
 .logobox{
@@ -647,20 +659,4 @@ background-repeat: no-repeat;
     width:140px;
     margin:10px;
     margin-top:50px;
-    filter:
-    drop-shadow(0px 0px 1px white)
-    drop-shadow(0px 0px 1px white)
-    drop-shadow(0px 0px 1px white)
-    drop-shadow(0px 0px 1px white)
-    drop-shadow(0px 0px 1px white)
-    drop-shadow(0px 0px 1px white)
-    drop-shadow(0px 0px 1px white)
-    drop-shadow(0px 0px 1px white)
-    drop-shadow(0px 0px 1px white);
-}
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
 }
