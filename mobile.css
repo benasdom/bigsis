@@ -116,6 +116,7 @@ animation: none;
 }
 .welcome{
     border-radius: 0px 0px 20px 20px ;
+    background-size:800px,1500px, 800px,1500px 1000px, 1000px 1000px;
     box-shadow:
     inset 0px 0px 0px #255E3B,
     inset 0px 0px 0px #4BBC77,
