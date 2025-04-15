@@ -543,7 +543,7 @@ background-repeat: no-repeat;
 
 }
 .readp span:nth-child(2){
-    animation-range-start: cofver 30vh;
+    animation-range-start: cover 30vh;
     animation-range-end: cover 60vh;
 
 }
@@ -564,6 +564,13 @@ background-repeat: no-repeat;
     height: 150vh;
     overflow: hidden;
     display: flex;
+}
+a{
+    text-decoration: none;
+}
+.titles{
+    font-size:70px;
+    color:white;
 }
 .text-cards{
     position: sticky;
