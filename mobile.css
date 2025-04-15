@@ -112,6 +112,9 @@ animation: none;
 }
 .welcome{
     border-radius: 0px 0px 20px 20px ;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.674),rgba(0, 0, 0, 0.348),rgba(0, 0, 0, 0.348),black),
+    url(./assets/group.png);
     background-size:800px,1500px, 800px,1500px 1000px, 1000px 1000px;
     box-shadow:
     inset 0px 0px 0px #255E3B,
