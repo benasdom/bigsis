@@ -112,11 +112,17 @@ animation: none;
 }
 .titles{
     padding-left:10px;
-    font-size:30px;
+    font-size:40px;
 }
 .welcome{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.674),rgba(0, 0, 0, 0.348),rgba(0, 0, 0, 0.348),black),
+    url(./assets/group.png),
+    url(./assets/back.png),
+    radial-gradient(#FAFAF8, #ffaee0,#4BBC77),
+    radial-gradient(rgba(0, 0, 0, 0),rgba(116, 112, 0, 0.45));
     border-radius: 0px 0px 20px 20px ;
-    background-size:800px,1500px, 800px,1500px 1000px, 1000px 1000px;
+    background-size:800px,1000px, 800px,1000px 1000px, 1000px 1000px;
     box-shadow:
     inset 0px 0px 0px #255E3B,
     inset 0px 0px 0px #4BBC77,
