@@ -110,6 +110,10 @@ animation: none;
     height: 150px;
     object-fit: cover;
 }
+.titles{
+    padding-left:10px;
+    font-size:30px;
+}
 .welcome{
     border-radius: 0px 0px 20px 20px ;
     box-shadow:
