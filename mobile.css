@@ -57,7 +57,7 @@ font-size: 30px;
     font-size: 30px;
     height:unset;
 }
-.input{transform: scale(.5);}
+.input{transform: scale(.8);}
 .footer{
     display: flex;
     flex-direction: column;
@@ -194,7 +194,13 @@ z-index: 1000;
     transition: all 1s ease-in-out;
 
 }
+label{
+    font-size: 15px;
+}
 
+#inp,.send{
+    font-size: 20px;
+}
 .phonemenu{
     display:block;
     left:0;
