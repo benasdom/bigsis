@@ -57,7 +57,7 @@ font-size: 30px;
     font-size: 30px;
     height:unset;
 }
-.input{transform: scale(.7);}
+.input{transform: scale(.67);}
 .footer{
     display: flex;
     flex-direction: column;
