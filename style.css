@@ -257,6 +257,8 @@ overflow: hidden;
 
 .topic{
     font-weight:600;
+    font-size: 25px;
+    margin-bottom: 10px;
     color:white;
 }
 
@@ -317,7 +319,7 @@ border:15px solid rgba(255, 255, 255, 0);
 }
 .path{
     stroke-linecap: round;
-    stroke:rgb(255, 255, 255);
+    stroke:rgb(0, 0, 0);
 }
 .mission{
     position:sticky;
@@ -368,6 +370,7 @@ border:15px solid rgba(255, 255, 255, 0);
     position:fixed;
     top:0;
     display:none;
+    background:rgba(0, 0, 0, 0.476);
     height:100vh;
     width:100%;
 margin-left: 100%;
@@ -574,7 +577,12 @@ background-repeat: no-repeat;
 }
 a{
     text-decoration: none;
+    color:white;
 }
+.link{
+    font-size: 16px;
+}
+
 .titles{
     font-size:70px;
     color:white;
