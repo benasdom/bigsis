@@ -17,11 +17,44 @@ aspect-ratio: 1/1;
 outline:none;
 color:rgb(255, 164, 255) !important;
 object-fit: cover;
+background:rgb(250, 255, 244);
+color:black;
 animation: none;
+height:unset;
+
+}
+.readp,.read{
+    color:black;
+}
+
+    .readp span{
+color:black;
+}
+.readp span:nth-child(even){
+color:black;
+font-size: 30px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px !important;
+    width:140px !important;
+    height:140px !important;
+    border-radius: 50% !important;
 
 }
 .say2,.say{
-    color:rgb(255, 129, 255) !important;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0) !important;
+    opacity: 1;
+    animation:none;
+    height:unset
+}
+.say2{
+    font-weight: 600;
+    font-size: 30px;
+    height:unset;
 }
 .input{transform: scale(.5);}
 .footer{
@@ -30,6 +63,12 @@ animation: none;
 }
 .footer,.mission,.text-cards{
     position: unset;
+    opacity: 1;
+
+    animation:none;
+}
+.text-cards{
+    background:white;
 }
 
 .gallery{
