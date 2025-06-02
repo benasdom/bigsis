@@ -68,9 +68,14 @@ font-size: 30px;
 .footer .lists div{
     padding:3px;
 }
+.topic{
+    font-size: 18px;
+}
 .footer .lists{
     padding:20px;
     align-items: baseline;
+    font-size: 10px;
+
 }
 .footer,.mission,.text-cards{
     position: unset;
